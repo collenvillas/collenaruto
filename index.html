@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Responsive Web</title>
+    <style>
+        body {
+            background-color: brown;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: lightblue;
+            padding: 5px;
+            text-align: center;
+        }
+        .topnav {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .topnav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        .Body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .left, .right {
+            background-color: lightpink;
+            flex: 1 1 45%;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .right {
+            background-color: lightyellow;
+        }
+        .img-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+        }
+        .img-box img {
+            width: 100%;
+            max-width: 23%;
+            margin: 1%;
+            box-sizing: border-box;
+        }
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: lightblue;
+        }
+        @media (max-width: 768px) {
+            .left, .right {
+                flex: 1 1 100%;
+            }
+            .img-box img {
+                max-width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .img-box img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>This is Responsive Web</h1>
+    </div>
+    <div class="topnav">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </div>
+    <div class="Body">
+        <div class="left">
+            <p>Naruto was born as the son of the Fourth Hokage, Minato Namikaze, and Kushina Uzumaki. 
+                <br>However, shortly after his birth, the Nine-Tailed Fox (Kurama) was sealed inside him to save the village from destruction. 
+                <br>This made him an outcast in the Hidden Leaf Village, as many people feared and resented him due to the destruction caused by Kurama. 
+                <br>He grew up lonely, without parents, and constantly seeking the acknowledgment of others.</p>
+        </div>
+        <div class="right">
+            <p>Throughout his journey as a ninja, Naruto faced many challenges and made powerful friends and enemies. 
+                <br>He fought against dangerous rogue ninjas, including members of the Akatsuki, an organization of powerful ninjas who sought to capture the tailed beasts like Kurama. 
+                <br>Naruto's bond with Sasuke became central to the series, as Sasuke eventually left the village to seek power and revenge, leading Naruto to pursue him.</p>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="pp1.jpeg" alt="1">
+        <img src="p2.jpeg" alt="2">
+        <img src="ppp3.jpeg" alt="3">
+        <img src="p4.jpeg" alt="4">
+    </div>
+    <footer><h1>COLLEN WEBSITE</h1></footer>
+</body>
+</html>
